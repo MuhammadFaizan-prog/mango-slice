@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --color-mango-300: #ffe082;
+  --color-mango-400: #ffd54f;
+  --color-mango-500: #f4bb44;
+  --color-mango-600: #e6a000;
+  --color-dark-900: #111111;
+  --color-dark-800: #1a1a1a;
+  --background: #111111;
+  --foreground: #ffffff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Lenis Recommended CSS */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* Custom utility classes for mango colors */
+.text-mango-300 { color: var(--color-mango-300); }
+.text-mango-400 { color: var(--color-mango-400); }
+.text-mango-500 { color: var(--color-mango-500); }
+.text-mango-600 { color: var(--color-mango-600); }
+
+.bg-mango-300 { background-color: var(--color-mango-300); }
+.bg-mango-400 { background-color: var(--color-mango-400); }
+.bg-mango-500 { background-color: var(--color-mango-500); }
+.bg-mango-600 { background-color: var(--color-mango-600); }
+
+.from-mango-300 { --tw-gradient-from: var(--color-mango-300); }
+.from-mango-400 { --tw-gradient-from: var(--color-mango-400); }
+.to-mango-600 { --tw-gradient-to: var(--color-mango-600); }
+
+.bg-dark-800 { background-color: var(--color-dark-800); }
+.bg-dark-900 { background-color: var(--color-dark-900); }
